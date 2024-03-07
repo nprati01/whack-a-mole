@@ -17,3 +17,24 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+#board div {
+    /* board = 540 X 540, divide into three tiles makes each div 180 x 180*/
+    width: 180px;
+    height: 180px;
+    background: url(pipe.png);
+    background-size: cover;
+}
+
+#board div img {
+    /* this will set all image tags inside the tile divs */
+    width: 100px;
+    height: 100px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
